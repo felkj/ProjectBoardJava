@@ -67,10 +67,5 @@ Sinta-se à vontade para abrir **issues** e enviar **pull requests**! 🚀
 
 ---
 
-## 📄 Licença
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-
 Made with by **Felipe** 🚀
 
