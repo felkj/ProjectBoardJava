@@ -1,0 +1,48 @@
+mar. 15, 2025 10:04:23 AM liquibase.changelog
+INFO: Reading resource: db/changelog/migrations/db.changelog-202403101524.sql
+mar. 15, 2025 10:04:23 AM liquibase.changelog
+INFO: Reading resource: db/changelog/migrations/db.changelog-202403101547.sql
+mar. 15, 2025 10:04:23 AM liquibase.changelog
+INFO: Reading resource: db/changelog/migrations/db.changelog-202403101603.sql
+mar. 15, 2025 10:04:23 AM liquibase.changelog
+INFO: Reading resource: db/changelog/migrations/db.changelog-202403101606.sql
+mar. 15, 2025 10:04:23 AM liquibase.changelog
+INFO: Reading from board.databasechangelog
+mar. 15, 2025 10:04:23 AM liquibase.changelog
+INFO: Change failed validation!
+mar. 15, 2025 10:04:23 AM liquibase.command
+INFO: Logging exception.
+ERROR: Exception Details
+ERROR: Exception Primary Class:  ValidationFailedException
+ERROR: Exception Primary Reason:  Validation Failed:
+     1 changesets check sum
+          db/changelog/migrations/db.changelog-202403101524.sql::202403101524::felipe was: 9:df3838f25c0eb18b3edadcfd94c7e5a3 but is now: 9:6f4f9375df0c2e86c0b9d5dc4b6017fe
+
+ERROR: Exception Primary Source:  4.29.2
+mar. 15, 2025 10:04:23 AM liquibase.command
+INFO: Command execution complete
+liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/migrations/db.changelog-202403101524.sql::202403101524::felipe was: 9:df3838f25c0eb18b3edadcfd94c7e5a3 but is now: 9:6f4f9375df0c2e86c0b9d5dc4b6017fe
+
+	at liquibase.command.CommandScope.execute(CommandScope.java:258)
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:216)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1329)
+	at liquibase.Liquibase.update(Liquibase.java:205)
+	at liquibase.Liquibase.update(Liquibase.java:188)
+	at liquibase.Liquibase.update(Liquibase.java:175)
+	at liquibase.Liquibase.update(Liquibase.java:155)
+	at me.dio.persistence.migration.MigrationStrategy.executeMigration(MigrationStrategy.java:37)
+	at me.dio.Main.main(Main.java:16)
+Caused by: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/migrations/db.changelog-202403101524.sql::202403101524::felipe was: 9:df3838f25c0eb18b3edadcfd94c7e5a3 but is now: 9:6f4f9375df0c2e86c0b9d5dc4b6017fe
+
+	at liquibase.changelog.DatabaseChangeLog.validate(DatabaseChangeLog.java:398)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:92)
+	at liquibase.command.CommandScope.execute(CommandScope.java:220)
+	... 12 more
