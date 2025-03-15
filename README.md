@@ -1,6 +1,6 @@
 # 📌 Project Board
 
-![GitHub repo size](https://img.shields.io/github/repo-size/seu-usuario/project-board) ![GitHub contributors](https://img.shields.io/github/contributors/seu-usuario/project-board)
+![GitHub repo size](https://img.shields.io/github/repo-size/seu-usuario/ProjectBoardJava) ![GitHub contributors](https://img.shields.io/github/contributors/seu-usuario/ProjectBoardJava)
 
 > Um sistema de gerenciamento de tarefas inspirado no Trello, desenvolvido em **Java** com **Gradle**, **Liquibase** para controle de migrações e **MySQL** como banco de dados.
 
